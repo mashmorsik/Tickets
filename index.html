@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tickets</title>
+</head>
+<body>
+    <form>
+        <label for="route">Выберите направление:</label>
+            <select id="route" onchange="selectType()">
+            <option value="A" selected>из А в В</option>
+            <option value="B">из В в А</option>
+            <option value="AB">из А в В и обратно в А</option>
+        </select>
+
+        <label for="time">Выберите время:</label>
+        <select id="time-options" onchange="selectReturnTime()">
+            <option>--:--</option>
+            <option value="1800A">18:00</option>
+            <option value="1830A">18:30</option>
+            <option value="1845A">18:45</option>
+            <option value="1900A">19:00</option>
+            <option value="1915A">19:15</option>
+            <option value="2100A">21:00</option>
+            <option value="1830B" hidden>18:30</option>
+            <option value="1845B" hidden>18:45</option>
+            <option value="1900B" hidden>19:00</option>
+            <option value="1915B" hidden>19:15</option>
+            <option value="1935B" hidden>19:35</option>
+            <option value="2150B" hidden>21:50</option>
+            <option value="2155B" hidden>21:55</option>
+        </select>
+
+
+        <select id="time-options-new" onclick="selectTimeHandler()">
+        </select>
+
+        <label for="return-time" id="return-time-label" hidden>Выберите время обратной поездки:</label>
+        <select id="return-time" hidden disabled >
+            <option>--:--</option>
+            <option value="1900B" hidden>19:00</option>
+            <option value="1915B" hidden>19:15</option>
+            <option value="1935B" hidden>19:35</option>
+            <option value="2150B" hidden>21:50</option>
+            <option value="2155B" hidden>21:55</option>
+        </select>
+
+        <label for="tickets">Количество билетов:</label>
+        <input id="tickets-number" type="number" min="1" max="20" onchange="button.disabled=false"/>
+        <button id="button" disabled onclick="count()">Посчитать</button>
+        <div id="response"></div>
+
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
