@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.onpic,
+#offer {
+    font-weight: 600;
+}
+
+.travel-time-mobile,
+li,
+.pier,
+.price-number,
+.button-more {
+    font-weight: 400;
+}
+
+.onpic-text-one,
+.button-more,
+.onpic-text-two-desktop {
+    background-color: #FED74B;
+}
+
+li {
+    list-style-image: url('tick.png');
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 91%;
+    margin-top: 26px;
+    margin-left: 4.2%;
+    margin-right: 4.8%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 603px;
+    margin-bottom: 30px;
+    border: 0.3px solid #828282;
+    border-radius: 16px;
+    position: relative;
+}
+
+.main-pic-one-desktop,
+.main-pic-two-desktop,
+.three,
+.travel-time-desktop {
+    display: none;
+}
+
+.onpic-text-one,
+.onpic-text-two,
+.onpic-text-two-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+}
+
+.onpic-text-one,
+.onpic-text-two-desktop {
+    top: 40px;
+    width: 99px;
+    height: 35px;
+}
+
+.onpic-text-two {
+    width: 129px;
+    height: 43px;
+    background-color: #7553FF;
+    color: #FFFFFF;
+    border-radius: 16px 0 16px 0;
+}
+
+.main-pic-one,
+.main-pic-two {
+    width: 100%;
+    height: 220px;
+    border-radius: 16px 16px 0 0;
+}
+
+.travel-time-mobile {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: #9E9E9E;
+    line-height: 122%;
+}
+
+.clock {
+    padding-top: 16px;
+    padding-left: 12px;
+}
+
+span {
+    padding-top: 17px;
+    padding-left: 9px;
+}
+
+#offer {
+    line-height: 22px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 14px;
+    padding: 15px 12px 0px 12px
+}
+
+.points {
+    margin: 30px 0 0 13px;
+}
+
+ul {
+    padding-inline-start: 0;
+    margin: 30px 0 0 29px;
+}
+
+li {
+    font-size: 14px;
+    color: #4B4B4B;
+    line-height: 20px;
+    line-height: 105%;
+    padding: 0 0 10px 18px;
+}
+
+#show-more {
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #503ba4;
+    margin-top: 20px;
+}
+
+.timetable {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.time-first,
+.time-second,
+.time-third {
+    flex: 0 0 21%;
+    width: 63px;
+    height: 24px;
+    border-radius: 11px;
+    font-size: 14px;
+    background-color: #D9E8FF;
+    text-align: center;
+    margin: 14px 4px 0 0;
+    padding-top: 2px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 35px 19px 19px 19px;
+}
+
+.pier {
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+.price-number {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    line-height: 20px;
+    justify-content: center;
+}
+
+.button-more {
+    width: 165px;
+    height: 44px;
+    border-radius: 20px;
+    border: 0.5px solid #CBA500;
+    color: #404040;
+    font-size: 14px;
+}
+
+.onpic-text-two-desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 760px) {
+    .wrapper {
+        margin: 67px 13% 0 13%;
+    }
+
+    .card {
+        flex-direction: row;
+        max-width: 1070px;
+        max-height: 370px;
+        min-height: auto;
+        margin-bottom: 59px;
+    }
+
+    .three {
+        display: flex;
+    }
+
+    .main-pic-one-desktop,
+    .main-pic-two-desktop {
+        display: flex;
+    }
+
+    .main-pic-one,
+    .main-pic-two {
+        display: none;
+    }
+
+    .onpic-text-one {
+        color: white;
+        background-color: #099CE8;
+        height: 42px;
+        width: 154px;
+    }
+
+    .onpic-text-two {
+        display: none;
+    }
+
+    .onpic-text-two-desktop {
+        display: flex;
+        height: 45px;
+        width: 180px;
+    }
+
+    .price {
+        justify-content: flex-start;
+    }
+
+    .price-number {
+        margin-right: 10px;
+    }
+
+    .number {
+        margin-bottom: 5px;
+        margin-top: 4px;
+    }
+
+    .time-first,
+    .time-second,
+    .time-third {
+        height: 28px;
+        flex: none;
+        margin: 0 4px 0 4px;
+        padding-top: 4px;
+    }
+    .points-timetable {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    li {
+        padding-bottom: 18px;
+    }
+    #show-more {
+        margin-top: 10px;
+    }
+    .travel-time-mobile {
+        display: none;
+    }
+    .travel-time-desktop {
+        display: contents;
+    }
+}
